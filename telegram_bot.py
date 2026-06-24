@@ -227,7 +227,7 @@ class TelegramRAGBot:
             
             # Добавляем индикатор, если ответ из кеша
             if from_cache:
-                await update.message.reply_text("💾 (ответ из кеша)", quote=False)
+                await update.message.reply_text("💾 (ответ из кеша)")
         
         except Exception as e:
             error_message = f"❌ Произошла ошибка при обработке запроса: {str(e)}"
